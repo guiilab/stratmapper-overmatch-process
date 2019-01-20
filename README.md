@@ -9,8 +9,9 @@ Note: users must maintain the file structure in this directory or change filepat
 Follow these steps to process CSV files for use in StratMapper:
 
 1. Download repository.
-```git clone https://github.com/guiilab/stratmapper-overmatch-process```
-
+```sh
+git clone https://github.com/guiilab/stratmapper-overmatch-process
+```
 2. Open 'stratmapper-overmatch-process' in IDE of choice.
 <br/>
 3. Place CSV files in replays folder ('./data/replays').
