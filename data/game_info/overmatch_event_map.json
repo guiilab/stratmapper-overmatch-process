@@ -1,0 +1,656 @@
+{
+  "domain_id": "overmatch",
+  "events": [
+    {
+      "event_id": "GameMode",
+      "properties": [
+        {
+          "property_id": "GameMode",
+          "type": "gameModeName"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayerTeamJoin",
+      "properties": [
+        {
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+          "property_id": "teamName",
+          "type": "string"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayerSteamId",
+      "properties": [
+        {
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+          "property_id": "steamId",
+          "type": "numeric"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "MatchState",
+      "properties": [
+        {
+          "property_id": "name",
+          "type": "stateName"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "VehicleSpawned",
+      "properties": [
+        {
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+          "property_id": "vehicleName",
+          "type": "string"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "Version",
+      "properties": [
+        {
+          "property_id": "version",
+          "type": "string"
+        },
+        {
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "MapName",
+      "properties": [
+        {
+          "property_id": "mapName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayersPerTeam",
+      "properties": [
+        {
+
+          "property_id": "team1Players",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "team2Players",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayerKilled",
+      "properties": [
+        {
+
+          "property_id": "victimName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "attackerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "LocationEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "posX",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "posY",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "posZ",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "UAVLaunch",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "UAVDestroyed",
+      "properties": [
+        {
+
+          "property_id": "victimName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "attackerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "ProjectileImpact",
+      "properties": [
+        {
+
+          "property_id": "targetName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "weaponType",
+          "type": "string"
+        },
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "VehicleDamage",
+      "properties": [
+        {
+
+          "property_id": "victimName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "attackerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "weaponType",
+          "type": "string"
+        },
+        {
+
+          "property_id": "damageTaken",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayerLeave",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "teamName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "CameraChangeEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "cameraType",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "FireEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "ordinanceType",
+          "type": "string"
+        },
+        {
+
+          "property_id": "fire_posX",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "fire_posY",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "fire_posZ",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "yaw",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "pitch",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "roll",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "roundVelocity",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "ProjectileImpactExtended",
+      "properties": [
+        {
+
+          "property_id": "targetName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "weaponType",
+          "type": "string"
+        },
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "targetX",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "targetY",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "targetZ",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "ObjectiveCaptured",
+      "properties": [
+        {
+
+          "property_id": "player1Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player2Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player3Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player4Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player5Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player6Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player7Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "player8Name",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "VehicleLocationEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "posX",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "posY",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "posZ",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "VehicleVelocityEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "vecX",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "vecY",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "vecZ",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "VehicleOrientationEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "yaw",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "pitch",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "roll",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "CameraOrientationEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "yaw",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "pitch",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "roll",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "WeaponOrientationEvent",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "yaw",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "pitch",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "roll",
+          "type": "numeric"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "PlayerJoin",
+      "properties": [
+        {
+
+          "property_id": "playerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "event_id": "UAVDamaged",
+      "properties": [
+        {
+
+          "property_id": "victimName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "attackerName",
+          "type": "string"
+        },
+        {
+
+          "property_id": "timestamp",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enumerations": [
+    {
+      "enumeration_type": "gameModeName",
+      "ordered": "False",
+      "values": [
+        "Capture"
+      ]
+    },
+    {
+      "enumeration_type": "stateName",
+      "ordered": "True",
+      "values": [
+        "MatchStart",
+        "MatchEnd"
+      ]
+    }
+  ]
+}
