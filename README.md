@@ -13,7 +13,11 @@ Follow these steps to process CSV files for use in StratMapper:
 git clone https://github.com/guiilab/stratmapper-overmatch-process
 ```
 2. Open 'stratmapper-overmatch-process' in IDE of choice.
+<br/>
 3. Place CSV files in replays folder ('./data/replays').
+<br/>
 4. Run 'raw_to_stratmapper.py' file.
+<br/>
 5. Check output folder ('./data/output'). There will be JSON files for each CSV file, as well as a directory 'config' with a 'matches_config.json' file, which is a JSON Array of formatted match files (one for each csv file).
+<br/>
 6. To load these files into StratMapper, follow the instructions in this [repository](https://github.com/guiilab/stratmapper-overmatch).
