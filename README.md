@@ -3,7 +3,7 @@
 ### Overview
 This package converts CSV files into JSON files for visualization in StratMapper - Overmatch.
 
-Note: users must maintain the file structure in this directory or change filepaths in the config file ('./processing/config/py').
+Note: users must maintain the file structure in this directory or change filepaths in the config file ('./processing/config.py').
 
 ### Get Started
 Follow these steps to process CSV files for use in StratMapper:
