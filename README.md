@@ -16,7 +16,7 @@ git clone https://github.com/guiilab/stratmapper-overmatch-process
 <br/>
 3. Place CSV files in replays folder ('./data/replays'). By default, there are two files (126_ESP.csv, 221_ESP.csv) in this folder for demonstration purposes. To process different files, remove these.
 <br/>
-4. Run 'raw_to_stratmapper.py' file in IDE or shell of choice.
+4. Run 'raw_to_stratmapper.py' file in IDE or system command line.
 <br/>
 5. Check output folder ('./data/output'). There will be JSON files for each CSV file, as well as a directory 'config' with a 'matches_config.json' file, which is a JSON Array of formatted match files (one for each csv file in replays folder).
 <br/>
