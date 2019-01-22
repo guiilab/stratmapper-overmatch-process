@@ -421,6 +421,12 @@ def process_single_match(csv_data_file, event_map):
                         event.update({'posX': None, 'posY': None, 'node_context': None})
                         # timestamp is rounded
                         event['timestamp'] = int(np.round(tstamp))
+                        if rename:
+                            if 'unit' in event:
+                                event['unit'] = player_rename
+                            if 'linked_unit' in event:
+                                event['linked_unit'] = Player_Rename_Map[event['linked_unit']] if event['linked_unit'] \
+                                                                          in Player_Rename_Map else event['linked_unit']
                         player_event_list[player_rename].append(event)
                 else:
                     if np.abs(act_next_t - tstamp) < np.abs(act_prev_t - tstamp):
@@ -447,6 +453,12 @@ def process_single_match(csv_data_file, event_map):
                     posX_2d, posY_2d = map_3d_to_2d_location(player_timestamp_events[player][tstamp]['node_context'])
                     event.update({'posX': posX_2d, 'posY': posY_2d})
                     event['timestamp'] = tstamp
+                    if rename:
+                        if 'unit' in event:
+                            event['unit'] = player_rename
+                        if 'linked_unit' in event:
+                            event['linked_unit'] = Player_Rename_Map[event['linked_unit']] if event['linked_unit'] in \
+                                                                            Player_Rename_Map else event['linked_unit']
                     player_event_list[player_rename].append(event)
 
     final_event_list = []
