@@ -1,9 +1,18 @@
+# this script takes Overmatch replay files (raw-data) in csv format and generates events file and match config file
+# the raw-data and output folder locations can be found from config.py script
+# the raw-data folder keeps the replay files in csv format
+# more replay csv files can be added to raw-data folder, this script would run on all the files in the input folder
+# output contains event file for each match, match config file for each match, and an aggregate match config file for
+    # all the matches
+# if player renaming is true (set in config.py), it will generate a rename_map.json that contains a dictionary mapping
+    # of actual name and rename of a player for each mach
+
 import csv
 import json
 import copy
 import os
 import numpy as np
-from processing.config import raw_data_folder, output_folder, rename, event_map_file, match_config_file
+from processing.config import raw_data_folder, output_folder, rename, event_map_file, overmatch_event_specs
 
 TEAM_1 = "Blue Team"
 TEAM_2 = "Red Team"
@@ -642,8 +651,13 @@ def process_files(data_folder, output_folder, event_map, match_config_file):
                     all_match_configs.append(match_config)
 
                     create_directory(output_folder)
-                    with open(output_folder + name + '.json', 'w') as outfile:
+                    with open(output_folder + 'events_' + name + '.json', 'w') as outfile:
                         json.dump(event_list, outfile)
+                        outfile.close()
+
+                    create_directory(output_folder + 'match_config/')
+                    with open(output_folder + 'match_config/' + name + '.json', 'w') as outfile:
+                        json.dump(match_config, outfile)
                         outfile.close()
 
                 # saving all the renaming player with actual names
@@ -668,4 +682,4 @@ def process_files(data_folder, output_folder, event_map, match_config_file):
 
 if __name__ == "__main__":
     event_map = read_event_mapping(event_map_file)
-    process_files(raw_data_folder, output_folder, event_map, match_config_file)
+    process_files(raw_data_folder, output_folder, event_map, overmatch_event_specs)
