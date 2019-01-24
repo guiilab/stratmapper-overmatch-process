@@ -18,6 +18,6 @@ git clone https://github.com/guiilab/stratmapper-overmatch-process
 <br/>
 4. Run 'raw_to_stratmapper.py' file in IDE or system command line.
 <br/>
-5. Check output folder ('./data/output'). There will be JSON files for each CSV file, as well as a directory 'config' with a 'matches_config.json' file, which is a JSON Array of formatted match files (one for each csv file in replays folder).
+5. Check output folder ('./data/output'). There are two directories and multiple files with an 'events' prefix. These are JSON arrays of events objects. In the 'config' directory, there will be a 'matches_config.json' file, which is a JSON array of all of the match configuration objects (one for each csv placed in ('./data/replays'). If renaming was elected, there will also be a rename_map.json file with this information. In the 'match_config' directory, there will be individual files for each match_config object in the previously mentioned JSON array of match_config objects.
 <br/>
 6. To load these files into StratMapper, follow the instructions in this [repository](https://github.com/guiilab/stratmapper-overmatch).
