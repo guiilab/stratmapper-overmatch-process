@@ -12,7 +12,7 @@ import json
 import copy
 import os
 import numpy as np
-from processing.config import raw_data_folder, output_folder, rename, event_map_file, overmatch_event_specs
+from config import raw_data_folder, output_folder, rename, event_map_file, overmatch_event_specs
 
 TEAM_1 = "Blue Team"
 TEAM_2 = "Red Team"
